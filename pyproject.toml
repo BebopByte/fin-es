@@ -1,0 +1,23 @@
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[project]
+name = "fin-es"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "alembic",
+    "psycopg[binary]",
+    "pydantic",
+    "pydantic-settings",
+    "redis",
+    "celery",
+    "structlog",
+    "prometheus-client",
+    "sentry-sdk",
+]
